@@ -9,12 +9,19 @@
       crossorigin="anonymous"
     ></script>
     <link href="./output.css" rel="stylesheet" />
+    <style>
+      .card{
+        padding: 20px;
+        border-radius: 20px;
+        /* box-shadow: 0 0 10px 1px rgb(157, 157, 157); */
+      }
+    </style>
   </head>
-  <body class="font-main text-[#3a3a3a] mx-30">
-    <header class="mb-25">
-      <nav class="flex mt-21 justify-between width-full items-center">
+  <body class="font-main text-[#3a3a3a]">
+    <header class="mb-25  mx-30 max-sm:mx-4">
+      <nav class="flex mt-21 justify-between width-full items-center max-sm:flex-col">
         <h3 class="text-2xl font-bold">Influencer products</h3>
-        <ul class="flex gap-8 font-semibold text-base">
+        <ul class="flex gap-8 font-semibold text-base max-sm:hidden">
           <li><a href="#">Home</a></li>
           <li><a href="#">Products</a></li>
           <li><a href="#">Sign Up</a></li>
@@ -23,14 +30,14 @@
           <li><i class="fa-solid fa-cart-shopping fa-xl"></i></li>
         </ul>
       </nav>
-      <div class="banner flex justify-between py-10">
+      <div class="banner flex justify-between py-10 max-sm:flex-col-reverse max-sm:items-center">
         <div
-          class="banner-content w-[50%] flex flex-col items-start justify-center"
+          class="banner-content w-[50%] flex flex-col items-start justify-center max-sm:w-full max-sm:items-center max-sm:text-center"
         >
           <h1 class="text-5xl font-bold leading-17.5">
             Start your Journey as Influencer
           </h1>
-          <p class="font-semibold">
+          <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sem
             vestibulum sed scelerisque eros. Lectus faucibus.
           </p>
@@ -46,7 +53,7 @@
           <img class="p-8 pl-0" src="/images/main-camera.png" alt="" />
         </div>
       </div>
-      <div class="brands flex justify-between py-8.5 px-15.5">
+      <div class="brands flex max-sm:flex-wrap max-sm:justify-center max-sm:gap-12 justify-between py-8.5 px-15.5">
         <img src="/logos/Alibaba.svg" alt="" />
         <img src="/logos/Amazon.svg" alt="" />
         <img src="/logos/Daraz.pk Logo.svg" alt="" />
@@ -56,11 +63,11 @@
         <img src="/logos/Target.svg" alt="" />
       </div>
     </header>
-    <main>
+    <main class=" mx-30 max-sm:mx-4">
       <section class="popular-collection">
         <h2 class="font-semibold text-3xl text-center">Popular Collection</h2>
-        <div class="container grid grid-cols-3 gap-4 pt-7.5 pb-12.5">
-          <div class="card flex flex-col px-3.5 py-4.5 shadow-2xl">
+        <div class="container grid grid-cols-3 max-sm:grid-cols-1 gap-10 pt-7.5 pb-12.5">
+          <div class="card flex flex-col px-3.5 py-4.5 ring-2 ring-blue-500/50">
             <img src="/images/tripod.png" alt="" />
             <h4 class="font-medium text-[28px]">Flex Tripod</h4>
             <h5 class="text-2xl">$50.48</h5>
@@ -79,7 +86,7 @@
             </p>
             <p class="font-bold text-[14px] font-inter">Wordwide shifting <br> available <br> Buyers protection possible!</p>
           </div>
-          <div class="card flex flex-col px-3.5 py-4.5 shadow-2xl">
+          <div class="card flex flex-col px-3.5 py-4.5 ring-2 ring-blue-500/50">
             <img src="/images/mic.png" alt="" />
             <h4 class="font-medium text-[28px]">Microphone</h4>
             <h5 class="text-2xl">$120.25</h5>
@@ -98,7 +105,7 @@
             </p>
             <p class="font-bold text-[14px] font-inter">Wordwide shifting <br> available <br> Buyers protection possible!</p>
           </div>
-          <div class="card flex flex-col px-3.5 py-4.5 shadow-2xl">
+          <div class="card flex flex-col px-3.5 py-4.5 ring-2 ring-blue-500/50">
             <img src="/images/airpod.png" alt="" />
             <h4 class="font-medium text-[28px]">Airbuds</h4>
             <h5 class="text-2xl">$100.00</h5>
@@ -117,7 +124,7 @@
             </p>
             <p class="font-bold text-[14px] font-inter">Wordwide shifting <br> available <br> Buyers protection possible!</p>
           </div>
-          <div class="card flex flex-col px-3.5 py-4.5 shadow-2xl">
+          <div class="card flex flex-col px-3.5 py-4.5 ring-2 ring-blue-500/50">
             <img src="/images/drone.png" alt="" />
             <h4 class="font-medium text-[28px]">Drone</h4>
             <h5 class="text-2xl">$980.25</h5>
@@ -136,7 +143,7 @@
             </p>
             <p class="font-bold text-[14px] font-inter">Wordwide shifting <br> available <br> Buyers protection possible!</p>
           </div>
-          <div class="card flex flex-col px-3.5 py-4.5 shadow-2xl">
+          <div class="card flex flex-col px-3.5 py-4.5 ring-2 ring-blue-500/50">
             <img src="/images/lights.png" alt="" />
             <h4 class="font-medium text-[28px]">Light Setup</h4>
             <h5 class="text-2xl">$1200.00</h5>
@@ -155,7 +162,7 @@
             </p>
             <p class="font-bold text-[14px] font-inter">Wordwide shifting <br> available <br> Buyers protection possible!</p>
           </div>
-          <div class="card flex flex-col px-3.5 py-4.5 shadow-2xl">
+          <div class="card flex flex-col px-3.5 py-4.5 ring-2 ring-blue-500/50">
             <img src="/images/setup.png" alt="" />
             <h4 class="font-medium text-[28px]">Photoshoot Set</h4>
             <h5 class="text-2xl">$820.40</h5>
@@ -174,7 +181,7 @@
             </p>
             <p class="font-bold text-[14px] font-inter">Wordwide shifting <br> available <br> Buyers protection possible!</p>
           </div>
-          <div class="card flex flex-col px-3.5 py-4.5 shadow-2xl">
+          <div class="card flex flex-col px-3.5 py-4.5 ring-2 ring-blue-500/50">
             <img src="/images/camera.png" alt="" />
             <h4 class="font-medium text-[28px]">Vlogging Camera</h4>
             <h5 class="text-2xl">$1800.80</h5>
@@ -193,7 +200,7 @@
             </p>
             <p class="font-bold text-[14px] font-inter">Wordwide shifting <br> available <br> Buyers protection possible!</p>
           </div>
-          <div class="card flex flex-col px-3.5 py-4.5 shadow-2xl">
+          <div class="card flex flex-col px-3.5 py-4.5 ring-2 ring-blue-500/50">
             <img src="/images/single-light.png" alt="" />
             <h4 class="font-medium text-[28px]">Green Screen</h4>
             <h5 class="text-2xl">$25.48</h5>
@@ -212,7 +219,7 @@
             </p>
             <p class="font-bold text-[14px] font-inter">Wordwide shifting <br> available <br> Buyers protection possible!</p>
           </div>
-          <div class="card flex flex-col px-3.5 py-4.5 shadow-2xl">
+          <div class="card flex flex-col px-3.5 py-4.5 ring-2 ring-blue-500/50/50">
             <img src="/images/action.png" alt="" />
             <h4 class="font-medium text-[28px]">Action Camera</h4>
             <h5 class="text-2xl">$380.00</h5>
@@ -234,23 +241,26 @@
         </div>
           <a href="#" class="w-100% absolute right-30 text-[#e02c6d] cursor-pointer">See More <span><i class="fa-solid fa-arrow-right"></i></span></a>
       </section>
-      <section class="featured-product my-[100px] flex justify-between">
+      <section class="featured-product my-[100px] flex justify-between max-sm:flex-col-reverse max-sm:items-center">
         <div class="feature-image">
           <img src="/images/gear.png" alt="">
         </div>
-        <div class="feature-content">
+        <div class="feature-content max-sm:flex max-sm:flex-col max-sm:items-center max-sm:text-center max-sm:mb-10">
           <h2 class="font-bold text-[38px]">Featured products at one place</h2>
           <p class="w-[500px] font-bold text-[16px] py-4">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
-          <button class="bg-[#e02c6d] text-white px-6 py-2.5">join Now <span><i class="fa-solid fa-arrow-right"></i></span></button>
+          <button class="bg-[#e02c6d] text-white px-6 py-2.5 max-sm:mt-5">join Now <span><i class="fa-solid fa-arrow-right"></i></span></button>
         </div>
       </section>
     </main>
-    <footer>
-      <h3>Influencer products</h3>
-      <p>Copyright &copy; 2020  influencer products</p>
-      <p>All rights reserved</p>
-      <div class="social-icon">
-        
+    <footer class="bg-[#0a0826] text-white flex flex-col py-[50px] justify-center items-center">
+      <h3 class="font-bold text-2xl py-2">Influencer products</h3>
+      <p class="font-bold text-[14px] font-secondary py-2">Copyright &copy; 2020  influencer products</p>
+      <p class="font-bold text-[14px] py-2">All rights reserved</p>
+      <div class="social-icon flex gap-5 py-2">
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-solid fa-globe"></i></a>
+        <a href="#"><i class="fa-brands fa-square-x-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-youtube"></i></a>
       </div>
     </footer>
   </body>
